@@ -50,7 +50,7 @@ Self-Hosted, Desktop, Concord-Voice, concordvoice-com, Agentic-Dev-Tooling, The-
 
 - Never weaken Sonar rules, exclusions, thresholds or gates, and never add or suggest NOSONAR-style suppression. A false positive is handled per instance and recorded in the repository's register. Any other tool's inline disable needs an instance-level reason.
 - `Accepted` means valid and deferred; `False Positive` means the tool is wrong for that instance.
-- Sonar runs only on public repositories. Flag a Sonar workflow added to a private repository.
+- Sonar runs from GitHub Actions on every repository, private ones included (owner decision, 2026-11-04). SonarCloud Automatic Analysis stays off. Flag a Sonar workflow that skips the Actions scan or turns Automatic Analysis back on.
 - New code needs tests (happy and error paths); the gate is 80% coverage on new code.
 
 ## Review output
