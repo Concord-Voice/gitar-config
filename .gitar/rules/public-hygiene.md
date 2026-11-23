@@ -8,4 +8,4 @@ actions: "Comment listing each offending line"
 
 Check added lines, the PR title and the PR body. Fail on:
 1. The name of any other real-time communications, chat or video-meeting product. Suggest "major comms platforms" or a description of the behavior.
-2. Internal hostnames, private repository names other than Concord-Voice-Alpha, or links into private repositories.
+2. Internal hostnames, private repository names other than Concord-Voice-Alpha, or links into private repositories. Public tooling may name Internal-Dev-Tooling when identifying its source. This exception covers the repository name only.
